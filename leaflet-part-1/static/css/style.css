@@ -3,7 +3,30 @@ body {
   margin: 0;
 }
 
+.info-legend {
+  z-index: 1;
+  position: relative;
+  left: 5px;
+  bottom: 5px;
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  background: white;
+}
+
+.info-legend h4 {
+  margin-top: 0;
+} 
+
+.info-legend i {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
 #map,
+.info-legend,
 body,
 html {
   height: 100%;
