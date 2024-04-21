@@ -6,19 +6,19 @@ The United States Geological Survey, or USGS for short, provides scientific data
 Utilizes Javascript, CSS, and HTML languages, as well as the Leaflet mapping library.
 
 ## Purpose
-To visualize the data using Leaflet, I first:
-- set the url to be used for the json data call
-- set the inital map view and zoom level
-- set the map titlelayer using openstreetmap with attribution
-- create the legend to display with the relevant depth values and associated colors
-- and call the function to get the earthquake data
+To visualize the data using Leaflet, the program:
+- sets the url to be used for the json data call
+- sets the inital map view and zoom level
+- sets the map titlelayer using openstreetmap with attribution
+- creates the legend to display with the relevant depth values and associated colors
+- and calls the function to get the earthquake data
 
-Within the function, I:
-- retrieve the data from the API
-- loop through the data for the specific values I want and assign them to values for easier manipulation and readability later in the function
-- assign the marker size and color for each earthquake instance
-- create the markers by setting their location, size, and color
-- and finally creating and binding the popup to display relevant information
+Within the function, the program:
+- retrieves the data from the API
+- loops through the data for the specific values I want and assign them to values for easier manipulation and readability later in the function
+- assigns the marker size and color for each earthquake instance
+- creates the markers by setting their location, size, and color
+- and finally creates and binds the popup to display relevant information
 
 I opted to generate the data entirely within the function for ease and simplicity. However, due to the fact that it uses a large dataset, the markers do take a few minutes to generate. Manipulating the browser window contents before the page has finished loading (and the markers have appeared) can cause the webpage to become unresponsive.
 
